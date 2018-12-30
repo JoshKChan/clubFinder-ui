@@ -16,6 +16,12 @@ export class SearchResults extends Component {
         name: "yoyo",
         location: "nowhere",
         distance: 3.5
+      },
+      {
+        _id: 3,
+        name: "hoho",
+        location: "everywhere",
+        distance: 4.5
       }
     ];
   } 
@@ -39,7 +45,7 @@ export class SearchResults extends Component {
       </List.Item>
     );
     return (
-      <List divided verticalAlign='middle'>
+      <List divided verticalAlign='middle' size='large'>
         {searchResults}
       </List>
     );
