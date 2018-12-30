@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { SearchResults } from '../components';
+import { SearchResults, TopBar } from '../components';
 
 export class SearchResultsPage extends Component {
   render() {
     return (
-      <div className="searchResultsPage">
+      <div className='searchResultsPage'>
+        <TopBar />
         <SearchResults />
       </div>
     );
