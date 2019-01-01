@@ -1,3 +1,61 @@
+html, body, #root, #root>div {
+  height: 100%
+}
+
+.searchResultsPage {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  background-size: cover;
+  font-weight: bold;
+}
+
+// Probably should make this sticky or something{}
+.topBar {
+}
+
+.topBar .ui.menu {
+  border-radius: 0px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.pageContent {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+// Probably should make this sticky or something rather than flex{}
+.filterSidebar {
+  width: 250px;
+  float: left;
+  background: #27292b;
+}
+
+.searchResults  {
+  float: left;
+  width: 600px;
+  margin: 20px;
+  margin-left: 30px;
+}
+
+.searchResultsHeader {
+  font-size: 130%;
+}
+
+.searchResultsBody {
+  padding: 10px;
+  border: 1px solid rgba(34, 36, 38, .15);
+  background-color: white;
+  border-radius: 10px;
+  min-height: 100%;
+}
+
+#footer {
+  height: 200px;
+  width: 100%;
+}
 
 // The below css is default given by create-react-app feel free to change it{}
 

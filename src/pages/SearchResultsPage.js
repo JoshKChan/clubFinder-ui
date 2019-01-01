@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SearchResults, TopBar } from '../components';
+import { SearchResults, TopBar, FilterSidebar } from '../components';
 import axios from 'axios';
 
 export class SearchResultsPage extends Component {
@@ -27,9 +27,11 @@ export class SearchResultsPage extends Component {
         <TopBar handleChange={this.handleSearchChange} 
           handleSubmit={this.handleSearchSubmit} 
           state={this.state} />
-        search: {this.state.search} <br/>
-        submittedSearch: {this.state.submittedSearch}
-        <SearchResults list={this.state.searchResults} />
+        <div className='pageContent'>
+          <FilterSidebar />
+          <SearchResults list={this.state.searchResults} />
+        </div>
+        <div className='footer'></div>
       </div>
     );
   }
