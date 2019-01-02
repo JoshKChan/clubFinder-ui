@@ -10,7 +10,7 @@ export class TopBar extends Component {
   render() {
     return (
       <div className='topBar'>
-        <Menu>    
+        <Menu inverted>    
           <Menu.Item>
             Logo
           </Menu.Item>
