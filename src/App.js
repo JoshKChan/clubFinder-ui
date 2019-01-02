@@ -6,12 +6,14 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
 
 //import {
 //} from './components';
 
 import {
-  Home
+  Home,
+  SearchResultsPage
 } from './pages';
 
 class ExamplePrivateComponent extends Component {
@@ -45,6 +47,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/test" component={ExamplePrivateComponent} />
+            <Route path="/search" component={SearchResultsPage} />
           </Switch>
         </div>
       </Router>
