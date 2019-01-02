@@ -2,6 +2,15 @@ html, body, #root, #root>div {
   height: 100%
 }
 
+.clubDetailsPage {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  background-size: cover;
+  font-weight: bold;
+}
+
 .searchResultsPage {
   display: flex;
   min-height: 100%;
@@ -11,8 +20,24 @@ html, body, #root, #root>div {
   font-weight: bold;
 }
 
-// Probably should make this sticky or something{}
+// Probably should make this sticky or something rather than flex{}
+.filterSidebar {
+  width: 350px;
+  float: left;
+  background: #27292b;
+  color: white;
+  padding-top: 20px;
+  padding-left: 200px;
+}
+
+li .ui.checkbox label, .ui.checkbox+label {
+  color: white;
+}
+
 .topBar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .topBar .ui.menu {
@@ -24,13 +49,6 @@ html, body, #root, #root>div {
 .pageContent {
   flex: 1 1 auto;
   display: flex;
-}
-
-// Probably should make this sticky or something rather than flex{}
-.filterSidebar {
-  width: 250px;
-  float: left;
-  background: #27292b;
 }
 
 .searchResults  {

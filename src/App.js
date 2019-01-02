@@ -13,7 +13,8 @@ import 'semantic-ui-css/semantic.min.css';
 
 import {
   Home,
-  SearchResultsPage
+  SearchResultsPage,
+  ClubDetailsPage
 } from './pages';
 
 class ExamplePrivateComponent extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/test" component={ExamplePrivateComponent} />
             <Route path="/search" component={SearchResultsPage} />
+            <Route path="/clubView" component={ClubDetailsPage} />
           </Switch>
         </div>
       </Router>
