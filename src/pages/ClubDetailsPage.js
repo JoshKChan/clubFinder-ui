@@ -4,7 +4,7 @@ import { TopBar, FilterSidebar, ClubDetailsView } from '../components';
 export class ClubDetailsPage extends Component {
   constructor(props) {
     super(props);
-    // Need to add viewingClub 
+    // Need to put these attributes into a field, viewingClub 
     this.state = {
       search: '',
       submittedSearch: '',
@@ -12,7 +12,46 @@ export class ClubDetailsPage extends Component {
       name: 'Soccer Club',
       description: 'We play soccer',
       address: '123 Fake Street',
-      manager: 'John'
+      manager: {
+          userId: 45,
+          name: 'Jon',
+          email: 'Ben@mail.ca',
+          phoneNumber: '999-9999'
+      },
+      contacts: [
+        {
+          userId: 1,
+          name: 'Ben',
+          position: 'Accountant',
+          email: 'Ben@mail.ca',
+          phoneNumber: '999-9999'
+        },
+        {
+          userId: 2,
+          name: 'Ben',
+          position: 'Accountant',
+          email: 'Ben@mail.ca',
+          phoneNumber: '999-9999'
+        }
+      ],
+      regularActivities: [
+        'playing',
+        'writing'
+      ],
+      events: [
+        {
+          eventId: 20,
+          name: 'concert',
+          location: '234 Newyork Ave',
+          dateAndTime: 'Dec 12'
+        },
+        {
+          eventId: 20,
+          name: 'concert',
+          location: '234 Newyork Ave',
+          dateAndTime: 'Dec 12'
+        }
+      ]
     }
   }
 
@@ -32,7 +71,6 @@ export class ClubDetailsPage extends Component {
           handleSubmit={this.handleSearchSubmit} 
           state={this.state} />
         <div className='pageContent'>
-          <FilterSidebar />
           <ClubDetailsView state={this.state} />
         </div>
         <div className='footer'></div>
