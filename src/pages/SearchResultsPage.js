@@ -21,6 +21,7 @@ export class SearchResultsPage extends Component {
     // set search and searchResults afterwards
     this.setState({ submittedSearch: this.state.search });
   }
+
   render() {
     return (
       <div className='searchResultsPage'>

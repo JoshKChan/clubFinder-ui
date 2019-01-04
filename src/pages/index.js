@@ -1,2 +1,3 @@
 export * from './Home.js';
-export * from './SearchResultsPage';
+export * from './SearchResultsPage.js';
+export * from './ClubDetailsPage.js';
